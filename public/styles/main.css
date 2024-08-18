@@ -1,0 +1,42 @@
+h1 {
+    font-family: cursive;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 30px;
+}
+
+#title {
+    height: 40px;
+    text-align: center;
+}
+
+#title:hover {
+    border: 3px solid violet;
+}
+
+#content {
+    height: 500px;
+    text-align: left;
+    text-align: center;
+}
+
+#content:hover {
+    border: 3px solid violet;
+}
+
+#blog {
+    border: 2px solid black;
+}
+
+p {
+    margin-left: 15px;
+}
+
+span {
+    font-weight: bold;
+}

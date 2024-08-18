@@ -1,0 +1,11 @@
+<%- include("components/header.ejs") %>
+
+<div class="form">
+<form action="/submit" method="POST">
+    <input id="title" type="text" name="title" placeholder="Enter the title of the blog">
+    <textarea id="content" type="text" name="content" placeholder="Enter the content here"></textarea>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<%- include("components/footer.ejs") %>

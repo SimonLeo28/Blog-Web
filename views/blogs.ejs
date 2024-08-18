@@ -1,0 +1,11 @@
+<%- include("components/header.ejs") %>
+<h1>View Your Blogs Below</h1>
+<div id="blog">
+    <% if(locals.title && locals.content) { %>
+        <h1>Title : <%= title %></h1>
+        <p><span>Blog Content : </span><%= content %></p>
+    <% } else { %>
+        <h1>Please create the blog to view them</h1>
+    <% } %>
+</div>
+<%- include("components/footer.ejs") %>
