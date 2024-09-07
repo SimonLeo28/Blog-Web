@@ -5,7 +5,7 @@
     <% blogs.forEach(function(blog) { %>  <!-- Directly reference 'blogs' -->
     <div class="blog-box">
         <h1>Title : <%= blog.title %></h1>
-        <p><span>Blog Content : </span><%= blog.content.slice(0,100) %> click more...</p>
+        <p><span>Blog Content : </span><%= blog.content.slice(0,100) %> <a href = "/blogs/<%= blog.id %>">click more...</a></p>
     </div>
     <% }) %>
     <% } else { %>

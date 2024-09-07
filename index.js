@@ -43,10 +43,21 @@ app.post("/submit" , async (req,res) => {
         const result = await db.query("SELECT * FROM blogs");
         const blogs = result.rows;
         res.render("blogs.ejs" , { blogs : blogs }); 
-        
-        
+        res.redirect("/blogs")
     } catch(err) {
         console.log(err);        
+    }
+});
+
+app.get("/blogs/:id", async (req,res) => {
+    try {
+        const id = req.params['id'];
+        const result = await db.query("SELECT * FROM blogs WHERE id = $1",[id]);
+        const blog = result.rows;
+        res.render("singleBlog.ejs" , {blog: blog[0]});
+    } catch(err) {
+        console.log(err);
+        
     }
 });
 

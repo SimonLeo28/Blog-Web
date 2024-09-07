@@ -1,0 +1,16 @@
+<%- include("components/header.ejs") %>
+
+<div class="SingleBlog">
+    <% if(locals.blog) { %>
+    <div class="title">
+        <h1>Title: <%= blog.title %></h1>
+    </div>
+    <div class="content">
+        <p><span>Blog Content: <br/></span> <%= blog.content %> </p>
+    </div>
+    <% } else { %>
+        <h1><center>Loading...</center></h1>
+    <% } %>
+</div>
+
+<%- include("components/footer.ejs") %>
