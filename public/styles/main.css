@@ -40,3 +40,10 @@ p {
 span {
     font-weight: bold;
 }
+
+.blog-box {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 3;
+}
